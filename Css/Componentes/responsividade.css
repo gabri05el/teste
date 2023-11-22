@@ -1,5 +1,48 @@
 /* HEADER */
-
+@media(max-width: 940px) {
+    .header__logo {
+        width: 7rem;
+    }
+    
+}
+@media(max-width: 700px) {
+    .header__menu {
+        background-color: var(--cor-01);
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 7.8rem;
+        right: -100%;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 0 0 1.8rem 1.8rem;
+        transition: all 0.6s;
+    }
+    .header__menu_texto {
+        font-size: 1.4rem;
+        width: 100px;
+    }
+    .header__menu_texto:hover {
+        color: var(--cor-03);
+        border: none;
+    }
+    .header__menu.ativo {
+        right: 0;
+    }
+    .barras {
+        display: block;
+    }
+    .barras.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    .barras.ativo .barra:nth-child(1) {
+        transform: translateY(0.6rem) rotate(45deg);
+    }
+    .barras.ativo .barra:nth-child(3) {
+        transform: translateY(-0.6rem) rotate(-45deg);
+    }
+}
 /* MAIN */
 
 /* FOOTER */
