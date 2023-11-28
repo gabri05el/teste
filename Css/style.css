@@ -4,6 +4,7 @@
 @import url(./Componentes/responsividade.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
@@ -13,6 +14,7 @@
     --cor-04: #F6F1EE;
 
     --texto-header: 'Edu TAS Beginner', cursive;
+    --texto-main: 'Ephesis', cursive;
     --texto-footer: 'Dancing Script', cursive;
 }
 
