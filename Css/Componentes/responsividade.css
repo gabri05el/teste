@@ -47,6 +47,7 @@
 @media(max-width: 600px) {
     .header__logo {
         width: 5.2rem;
+        height: 15vh;
     }
 }
 /* MAIN */
