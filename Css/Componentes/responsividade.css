@@ -3,8 +3,8 @@
     .header__logo {
         width: 7rem;
     }
-    
 }
+
 @media(max-width: 700px) {
     .header__menu {
         background-color: var(--cor-01);
@@ -41,6 +41,12 @@
     }
     .barras.ativo .barra:nth-child(3) {
         transform: translateY(-0.6rem) rotate(-45deg);
+    }
+}
+
+@media(max-width: 600px) {
+    .header__logo {
+        width: 5.2rem;
     }
 }
 /* MAIN */
