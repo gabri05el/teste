@@ -192,12 +192,12 @@
 @media(max-width: 680px) {
     /* AVALIACOES */
     .main__avaliacao__titulo_h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         letter-spacing: 0.2rem;
     }
     .main__avaliacoes {
-        width: 400px;
-        height: 280px;
+        width: 360px;
+        height: 260px;
     }
     .main__avaliacao_texto {
         padding: 1rem;
@@ -220,6 +220,7 @@
         height: 0.5rem;
         border: 1px solid var(--cor-01);
         border-radius: 0.2rem;
+        margin: 0.2rem auto;
     }
 }
 
