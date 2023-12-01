@@ -188,6 +188,7 @@
     }
     .main__reseva_texto_p {
         font-size: 2rem;
+        letter-spacing: 0.1rem;
     }
     .main__reseva_texto_botao {
         font-size: 1.2rem;
