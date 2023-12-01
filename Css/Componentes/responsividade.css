@@ -126,6 +126,14 @@
     .main__curiosidade_texto {
         font-size: 1.2rem;
     }
+
+    /* CARDAPIO */
+    .main__cardapio_titulo_h2 {
+        font-size: 1.2rem;
+    }
+    .main__cardapio_img_pizza {
+        height: 180px;
+    }
 }
 
 @media(max-width: 500px) {
