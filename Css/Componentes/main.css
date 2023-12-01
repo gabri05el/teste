@@ -196,9 +196,10 @@
 
 .main__reseva_texto_p {
     color: var(--cor-04);
+    white-space: nowrap;
     font-family: var(--texto-main);
     font-size: 3rem;
-    white-space: nowrap;
+    letter-spacing: 0.3rem;
 }
 
 .main__reseva_texto_botoes {
@@ -212,6 +213,7 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
     font-family: var(--texto-main);
     font-size: 1.4rem;
     letter-spacing: 0.4rem;
