@@ -23,7 +23,7 @@
         background-color: var(--cor-01);
         align-items: center;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 7.9rem;
         right: -100%;
         width: 100%;
