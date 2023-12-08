@@ -21,6 +21,7 @@
 @media(max-width: 700px) {
     .header__menu {
         background-color: var(--cor-01);
+        z-index: 1;
         align-items: center;
         flex-direction: column;
         position: fixed;
