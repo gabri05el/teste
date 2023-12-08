@@ -72,12 +72,10 @@
 
 .formulario__campo_dados .fa-circle-check {
     color: var(--cor-formulario-01);
-    border-radius: 50%;
 }
 
 .formulario__campo_dados .fa-circle-exclamation {
     color: var(--cor-formulario-02);
-    border-radius: 50%;
 }
 
 .formulario__campo_dados.certo i.fa-circle-check {
