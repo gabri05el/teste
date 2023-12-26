@@ -69,6 +69,10 @@
 }
 
 @media(max-width: 620px) {
+    .main__contatos {
+        width: 80%;
+        margin: 1rem auto;
+    }
     .main__contato_imagem {
         height: 32vh;
         border-radius: 1.2rem;
