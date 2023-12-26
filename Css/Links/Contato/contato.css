@@ -70,7 +70,7 @@
 
 @media(max-width: 620px) {
     .main__contato_imagem {
-        height: 40vh;
+        height: 32vh;
         border-radius: 1.2rem;
     }
 }
