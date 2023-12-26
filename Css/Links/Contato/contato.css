@@ -67,3 +67,10 @@
 .main__contato_local p i:hover {
     color: var(--cor-04);
 }
+
+@media(max-width: 620px) {
+    .main__contato_imagem {
+        height: 40vh;
+        border-radius: 1.2rem;
+    }
+}
