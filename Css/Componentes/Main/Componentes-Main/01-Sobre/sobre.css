@@ -1,0 +1,32 @@
+.main__sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.main__sobre_componente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.main__sobre_titulo {
+    color: var(--cor-02);
+    font-family: var(--texto-main);
+    font-size: 2rem;
+}
+
+.main__sobre_texto {
+    color: var(--cor-07);
+    font-family: var(--texto-main);
+    font-size: 1.2rem;
+}
+
+.main__sobre_img_fundo {
+    width: 400px;
+}
