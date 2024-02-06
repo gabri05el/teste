@@ -1,0 +1,5 @@
+.main__sobre_titulo {
+    color: var(--cor-02);
+    font-family: var(--texto-main);
+    font-size: 2rem;
+}
