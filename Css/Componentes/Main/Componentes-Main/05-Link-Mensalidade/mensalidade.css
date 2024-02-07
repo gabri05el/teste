@@ -1,0 +1,24 @@
+@import url(./Componente-Mensalidade/main-mensalidade-01/mensalidade-01.css);
+@import url(./Componente-Mensalidade/main-mensalidade-02/mensalidade-02.css);
+
+.main__mensalidade {
+    background-color: var(--cor-07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+@media(max-width: 1080px) {
+
+}
+
+@media(max-width: 740px) {
+    
+}
+
+@media(max-width: 520px) {
+    
+}
