@@ -38,7 +38,7 @@
     }
     .header__menu_links {
         background-color: var(--cor-de-fundo-02);
-        text-align: left;
+        text-align: center;
         justify-content: space-around;
         position: fixed;
         top: 6.2rem;
@@ -84,6 +84,7 @@
         top: 6.1rem;
         left: 135%;
         width: 35%;
+        padding: 1rem;
         gap: 0.5rem;
         border-bottom-left-radius: 1.3rem;
         transition: var(--transicao-06s);
@@ -95,5 +96,6 @@
         font-size: 1.22rem;
     }
 }
+
 
 
