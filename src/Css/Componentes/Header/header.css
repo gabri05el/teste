@@ -37,7 +37,7 @@
         border-radius: 0;
     }
     .header__menu_links {
-        background-color: #fff;
+        background-color: var(--cor-de-fundo-02);
         text-align: left;
         flex-direction: column;
         position: fixed;
@@ -78,5 +78,6 @@
         font-size: 1.18rem;
     }
 }
+
 
 
