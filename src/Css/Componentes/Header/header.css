@@ -82,16 +82,17 @@
         flex-direction: column;
         position: fixed;
         top: 6.1rem;
-        left: 130%;
-        width: 30%;
+        left: 135%;
+        width: 35%;
         gap: 0.5rem;
         border-bottom-left-radius: 1.3rem;
         transition: var(--transicao-06s);
     }
     .header__menu_links.ativo {
-        left: 70%;
+        left: 65%;
     }
     .header__menu_link {
         font-size: 1.22rem;
     }
 }
+
