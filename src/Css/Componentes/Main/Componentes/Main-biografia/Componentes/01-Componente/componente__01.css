@@ -4,14 +4,14 @@
 }
 
 .main__biografia_titulo {
-    color: var(--cor-fonte-02);
+    color: var(--cor-fonte-01);
     cursor: default;
     font-family: var(--fonte-main);
     font-size: 2.2rem;
 }
 
 .main__biografia_texto {
-    color: var(--cor-fonte-01);
+    color: var(--cor-fonte-02);
     font-family: var(--fonte-main);
     font-size: 1.4rem;
 }
@@ -31,4 +31,5 @@
     opacity: 1;
     animation: pisca 0.5s infinite;
 }
+
 
