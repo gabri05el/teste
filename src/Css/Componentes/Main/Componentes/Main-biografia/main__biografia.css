@@ -33,9 +33,11 @@
         background-image: var(--cor-fraca-forte-gradient);
     }
     .main__biografia_titulo {
+        color: var(--cor-fonte-02);
         font-size: 1.9rem;
     }
     .main__biografia_texto {
+        color: var(--cor-fonte-01);
         font-size: 1.2rem;
     }
 }
@@ -47,3 +49,4 @@
         font-size: 1.11rem;
     }
 }
+
