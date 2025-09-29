@@ -29,6 +29,9 @@
     }
 }
 @media(max-width: 860px) {
+    .main__biografia {       
+        background-image: var(--cor-fraca-forte-gradient);
+    }
     .main__biografia_titulo {
         font-size: 1.9rem;
     }
