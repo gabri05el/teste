@@ -61,8 +61,7 @@
         border-radius: 0;
     }
     .main__projeto_link_p {
-        padding: 0.6rem;
-        margin: 0 1rem;
+        padding: 0.8rem;
     }
     .main__projeto_link_img {
         width: 1.75rem;
@@ -72,3 +71,4 @@
         font-size: 1.22rem;
     }
 }
+
