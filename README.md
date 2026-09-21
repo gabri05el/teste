@@ -23,38 +23,14 @@ O portal avalia competências variadas divididas em **12 temas específicos** de
 
 O projeto integra os conhecimentos do semestre abordando do design à infraestrutura:
 
-* **Prototipagem & UI/UX:** Figma
-* **Front-end:** HTML5, CSS3, JavaScript (Vanilla / Framework se aplicável)
-* **Back-end:** [Inserir a tecnologia aqui, ex: Node.js / Java / Python]
-* **Banco de Dados:** PostgreSQL (Modelagem relacional e persistência)
-* **Infraestrutura / DevOps:** Docker & Docker Compose (Conteinerização da aplicação)
+* **Prototipagem & UI/UX:** Figma;
+* **Front-end:** HTML, CSS, JavaScript;
+* **Back-end:** Node.js;
+* **Banco de Dados:** PostgreSQL;
+* **Infraestrutura / DevOps:** Docker;
 * **Metodologia de Trabalho:** Scrum
 
----
-
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-Antes de começar, você vai precisar ter instalado em sua máquina:
-* [Git](https://git-scm.com)
-* [Docker e Docker Compose](https://docker.com)
-
-### 🧱 Passo a Passo
-
-```bash
-# 1. Clone este repositório
-$ git clone https://github.com
-
-# 2. Acesse a pasta do projeto
-$ cd NOME-DO-REPOSITORIO
-
-# 3. Suba os containers do Docker (Banco de dados e Aplicação)
-$ docker-compose up -d
-```
-
-*A aplicação estará disponível no seu navegador em `http://localhost:PORTA`.*
-
----
+[---
 
 ## 🎯 Escopo do Sistema (Funcionalidades Principais)
 
@@ -64,14 +40,7 @@ $ docker-compose up -d
 * [ ] **Gerador de Certificados:** Emissão automatizada de PDF para notas ≥ 65% com código de validação.
 * [ ] **Validador de QR Code:** Tela pública para checagem de autenticidade dos certificados emitidos.
 * [ ] **Histórico do Aluno:** Painel com o registro de todas as avaliações já realizadas.
-
----
-
-## 📋 Entregáveis de Modelagem e Design
-
-* **Protótipo no Figma:** [Insira o link do seu projeto no Figma aqui]
-* **Modelo do Banco de Dados:** O arquivo de modelagem e o script `init.sql` do PostgreSQL encontram-se na pasta `/database`.
-
+](url)
 ---
 
 ## 👥 Equipe
