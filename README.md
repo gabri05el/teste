@@ -37,10 +37,10 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 | Nome | Função | GitHub |
 | :--- | :--- | :--- |
 | **Gabriel da Fonseca Flauzino** | Project Owner | https://github.com/gabri05el |
-| **Hector Saiki Colombani de Faria** | Dev Team |
-| **Igor Vinicius de Araujo Pece Dos Santos** | Dev Team |
-| **João Vitor Pazzini Theodoro Gama** | Dev Team |
-| **Lucas Vilas Boas Fukuoka** | Scrum Master |
-| **Marcos Antonio Floreano Gonçalves** | Dev Team |
+| **Hector Saiki Colombani de Faria** | Dev Team | https://github.com/saikihector |
+| **Igor Vinicius de Araujo Pece Dos Santos** | Dev Team | http://github.com/IgorVinicin |
+| **João Vitor Pazzini Theodoro Gama** | Dev Team | https://github.com/jaopazzini |
+| **Lucas Vilas Boas Fukuoka** | Scrum Master | http://github.com/LuFukuo |
+| **Marcos Antonio Floreano Gonçalves** | Dev Team | https://github.com/MarcosFloreano |
 | **Vitor Souza Leal** | Dev Team |
 
