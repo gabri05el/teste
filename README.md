@@ -30,24 +30,13 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 * **Infraestrutura / DevOps:** Docker;
 * **Metodologia de Trabalho:** Scrum
 
-[---
-
-## 🎯 Escopo do Sistema (Funcionalidades Principais)
-
-* [ ] **Área de Estudos:** Material didático relevante organizado pelos 12 temas da avaliação.
-* [ ] **Módulo de Avaliação:** Motor de sorteio de questões (1 por tema) com exibição de imagens e alternativas.
-* [ ] **Cronômetro Ativo:** Lógica de 150s por questão com encerramento automático.
-* [ ] **Gerador de Certificados:** Emissão automatizada de PDF para notas ≥ 65% com código de validação.
-* [ ] **Validador de QR Code:** Tela pública para checagem de autenticidade dos certificados emitidos.
-* [ ] **Histórico do Aluno:** Painel com o registro de todas as avaliações já realizadas.
-](url)
 ---
 
 ## 👥 Equipe
 
-| Nome | Função |
-| :--- | :--- |
-| **Gabriel da Fonseca Flauzino** | Project Owner |
+| Nome | Função | GitHub |
+| :--- | :--- | :--- |
+| **Gabriel da Fonseca Flauzino** | Project Owner | https://github.com/gabri05el |
 | **Hector Saiki Colombani de Faria** | Dev Team |
 | **Igor Vinicius de Araujo Pece Dos Santos** | Dev Team |
 | **João Vitor Pazzini Theodoro Gama** | Dev Team |
