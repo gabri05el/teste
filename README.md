@@ -42,5 +42,5 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 | **João Vitor Pazzini Theodoro Gama** | Dev Team | https://github.com/jaopazzini |
 | **Lucas Vilas Boas Fukuoka** | Scrum Master | http://github.com/LuFukuo |
 | **Marcos Antonio Floreano Gonçalves** | Dev Team | https://github.com/MarcosFloreano |
-| **Vitor Souza Leal** | Dev Team |
+| **Vitor Souza Leal** | Dev Team | https://github.com/vitor-leal1 |
 
