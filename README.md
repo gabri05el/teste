@@ -32,34 +32,6 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 
 ---
 
-
----
-
-📅 Cronograma de Sprints
-
-| Sprint | Período |
-| :--- | :---:|
-| Sprint 1 | 28/09 - 22/10 |
-| Sprint 2 | 23/10 - 05/11 |
-| Sprint 3 | 06/11 - 26/11 |
-
----
-
-## 👥 Equipe
-
-| Nome | Função | GitHub |
-| :--- | :--- | :---: |
-| Gabriel da Fonseca Flauzino | Project Owner | [Gabriel](https://github.com/gabri05el) |
-| Hector Saiki Colombani de Faria | Dev Team | [Hector](https://github.com/saikihector) |
-| Igor Vinicius de Araujo Pece Dos Santos | Dev Team | [Igor](https://github.com/IgorVinicin) |
-| João Vitor Pazzini Theodoro Gama | Dev Team | [João](https://github.com/jaopazzini) |
-| Lucas Vilas Boas Fukuoka | Scrum Master | [Lucas](https://github.com/LuFukuo) |
-| Marcos Antonio Floreano Gonçalves | Dev Team | [Marcos](https://github.com/MarcosFloreano) |
-| Vitor Souza Leal | Dev Team | [Vitor](https://github.com/vitor-leal1) |
-
-
----
-
 ## 📋 Backlog Geral do Produto (Product Backlog)
 
 Este backlog lista todas as histórias de usuário necessárias para construir o Portal de Certificação, organizadas por módulos funcionais e destacadas por nível de prioridade.
@@ -245,3 +217,28 @@ Este backlog lista todas as histórias de usuário necessárias para construir o
 #### 📝 Documentação Obrigatória & DoD (Definition of Done)
 *   [ ] **[RNF01] Responsividade Mobile** `[🟢 PRIORIDADE BAIXA]` - Otimização final de estilos CSS puros para dispositivos móveis em todas as telas.
 *   [ ] **[RNF06] Entrega de Documentação Mínima** `[🟢 PRIORIDADE BAIXA]` - Redação do modelo de dados (DER), instruções de instalação via Docker, documentação dos endpoints da API e descrição das funcionalidades.
+
+
+---
+
+📅 Cronograma de Sprints
+
+| Sprint | Período |
+| :--- | :---:|
+| Sprint 1 | 28/09 - 22/10 |
+| Sprint 2 | 23/10 - 05/11 |
+| Sprint 3 | 06/11 - 26/11 |
+
+---
+
+## 👥 Equipe
+
+| Nome | Função | GitHub |
+| :--- | :--- | :---: |
+| Gabriel da Fonseca Flauzino | Project Owner | [Gabriel](https://github.com/gabri05el) |
+| Hector Saiki Colombani de Faria | Dev Team | [Hector](https://github.com/saikihector) |
+| Igor Vinicius de Araujo Pece Dos Santos | Dev Team | [Igor](https://github.com/IgorVinicin) |
+| João Vitor Pazzini Theodoro Gama | Dev Team | [João](https://github.com/jaopazzini) |
+| Lucas Vilas Boas Fukuoka | Scrum Master | [Lucas](https://github.com/LuFukuo) |
+| Marcos Antonio Floreano Gonçalves | Dev Team | [Marcos](https://github.com/MarcosFloreano) |
+| Vitor Souza Leal | Dev Team | [Vitor](https://github.com/vitor-leal1) |
