@@ -34,6 +34,7 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 
 ## 👥 Equipe
 
+
 | Nome | Função | GitHub |
 | :--- | :--- | :---: |
 | Gabriel da Fonseca Flauzino | Project Owner | [![GitHub](https://shields.io)](https://github.com/gabri05el) |
@@ -43,4 +44,5 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 | Lucas Vilas Boas Fukuoka | Scrum Master | [![GitHub](https://shields.io)](http://github.com/LuFukuo) |
 | Marcos Antonio Floreano Gonçalves | Dev Team | [![GitHub](https://shields.io)](https://github.com/MarcosFloreano) |
 | Vitor Souza Leal | Dev Team | [![GitHub](https://shields.io)](https://github.com/vitor-leal1) |
+
 
