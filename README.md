@@ -32,131 +32,6 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 
 ---
 
-# 📋 Backlog Geral do Produto (Product Backlog)
-
-Este backlog lista todas as histórias de usuário necessárias para construir o Portal de Certificação, organizadas por módulos funcionais e destacadas por nível de prioridade.
-
----
-
-## 🔐 Módulo 1: Autenticação, Instruções e Segurança (LGPD)
-
-### 🔹 US01 - Cadastro de Candidatos por CPF
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF03, RNF03 (LGPD), RP04
-*   **Como** candidato interessado na certificação,  
-*   **Quero** me cadastrar informando meu CPF, nome completo, e-mail e senha,  
-*   **Para** que meus dados fiquem salvos de forma segura e em conformidade com a LGPD.
-*   **Critérios de Aceitação:**
-    *   [ ] Front-end desenvolvido estritamente em HTML/CSS/JS puros, sem frameworks (`RP01`).
-    *   [ ] O CPF deve ser validado e tratado como identificador único no banco PostgreSQL.
-
-### 🔹 US02 - Login Exclusivo
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF04
-*   **Como** candidato cadastrado,  
-*   **Quero** realizar o login utilizando exclusivamente meu CPF e senha,  
-*   **Para** acessar com segurança a minha área restrita do portal.
-*   **Critérios de Aceitação:**
-    *   [ ] Bloquear o acesso a rotas internas caso o usuário não esteja autenticado via token/sessão no Back-end.
-
-### 🔹 US03 - Tela Inicial e Instruções da Avaliação
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF01, RF02
-*   **Como** candidato autenticado,  
-*   **Quero** visualizar uma tela inicial com a descrição detalhada, objetivos e instruções da certificação,  
-*   **Para** entender o funcionamento das regras antes de escolher iniciar o exame ou retornar depois.
-*   **Critérios de Aceitação:**
-    *   [ ] Apresentar botão claro para "Iniciar Certificação" ou opção de "Sair/Retornar Depois".
-
----
-
-## ⏱️ Módulo 2: O Motor da Certificação e Banco de Questões
-
-### 🔹 US04 - Banco de Questões e Sorteio Aleatório por Tema
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF05, RF06, RF15, RP04, RP06, RNF08
-*   **Como** sistema,  
-*   **Quero** selecionar aleatoriamente 1 única questão para cada um dos 12 temas a partir de um banco de 48 questões de alta qualidade (4 por tema),  
-*   **Para** garantir que cada candidato faça uma prova dinâmica e que cada tema seja respondido apenas uma vez.
-*   **Critérios de Aceitação:**
-    *   [ ] As 48 questões devem possuir qualidade técnica, clareza e estar cadastradas via DML no PostgreSQL.
-
-### 🔹 US05 - Interface Dinâmica da Questão
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF08, RP04, RP06
-*   **Como** candidato realizando a prova,  
-*   **Quero** visualizar a questão atual com seu enunciado, uma imagem obrigatória de apoio e quatro alternativas de múltipla escolha (A, B, C, D),  
-*   **Para** que eu possa analisar o cenário prático e marcar a única alternativa correta.
-*   **Critérios de Aceitação:**
-    *   [ ] A imagem deve carregar corretamente a partir do caminho/banco de dados em todas as questões.
-
-### 🔹 US06 - Proteção contra Quedas, Fechamento e Fraudes
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF14, RNF04
-*   **Como** sistema,  
-*   **Quero** invalidar e marcar a questão atual como incorreta imediatamente em caso de perda de conexão, fechamento do navegador ou tentativa de manipulação no front-end,  
-*   **Para** garantir a integridade da nota e impedir alterações indevidas.
-*   **Critérios de Aceitação:**
-    *   [ ] Toda validação de acerto/erro e salvamento de estado devem ocorrer no servidor (Node.js), nunca no JavaScript do cliente.
-
-### 🔹 US07 - Cronômetro de 150 segundos e Encerramento Automático
-*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF10, RF11
-*   **Como** candidato realizando a prova,  
-*   **Quero** visualizar um cronômetro regressivo de 150 segundos ativo na tela,  
-*   **Para** controlar meu tempo de resolução para cada questão.
-*   **Critérios de Aceitação:**
-    *   [ ] Ao zerar os 150s sem resposta enviada, a questão encerra automaticamente, computa como incorreta e exibe o feedback visual na tela.
-
-### 🔹 US08 - Feedback Imediato e Controle de Pausa da Sessão
-*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF09, RF11, RF12, RF13, RF21
-*   **Como** candidato,  
-*   **Quero** ver qual era a resposta correta logo após responder uma questão e escolher se avanço imediatamente ou se pauso a sessão,  
-*   **Para** que eu possa acompanhar meu progresso (temas concluídos/pendentes) e retomar a prova depois de onde parei.
-*   **Critérios de Aceitação:**
-    *   [ ] O sistema deve salvar o estado exato da sessão do candidato no PostgreSQL após cada clique de avanço.
-
----
-
-## 📖 Módulo 3: Área de Estudos e Trilha de Aprendizagem
-
-### 🔹 US09 - Área de Estudos Preparatória
-*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF07, RP07
-*   **Como** candidato,  
-*   **Quero** acessar um painel de estudos organizado exatamente pelos mesmos 12 temas da avaliação, contendo materiais didáticos e imagens,  
-*   **Para** me capacitar e revisar os conceitos de Scrum e Engenharia de Software antes de iniciar o exame.
-*   **Critérios de Aceitação:**
-    *   [ ] Garantir coerência absoluta entre o conteúdo textual exibido na área de estudos e o banco de questões cadastrado.
-
----
-
-## 🎓 Módulo 4: Resultados, Certificados e Auditoria
-
-### 🔹 US10 - Cálculo Centralizado de Desempenho
-*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF16, RNF04
-*   **Como** sistema,  
-*   **Quero** processar e calcular automaticamente a nota final e o percentual de acertos no Back-end assim que o 12º tema for concluído,  
-*   **Para** evitar qualquer tipo de fraude ou alteração de notas por console de navegador.
-*   **Critérios de Aceitação:**
-    *   [ ] O resultado deve ser injetado diretamente na tabela de histórico de forma imutável.
-
-### 🔹 US11 - Emissão de Certificado Eletrônico Funcional
-*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF17, RF18, RP04
-*   **Como** candidato aprovado com aproveitamento igual ou superior a 65%,  
-*   **Quero** emitir automaticamente um certificado digital contendo meu nome, CPF, e-mail, data/hora, nota, percentual e um QR Code,  
-*   **Para** comprovar formalmente minha capacitação em metodologias ágeis.
-*   **Critérios de Aceitação:**
-    *   [ ] Candidatos com nota inferior a 65% não devem ter acesso ao endpoint ou tela de geração de certificado.
-
-### 🔹 US12 - Validação Pública via QR Code
-*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF19, RP08
-*   **Como** um recrutador ou avaliador externo,  
-*   **Quero** escanear o QR Code impresso no certificado e ser redirecionado para uma página pública de validação,  
-*   **Para** confirmar a autenticidade e a veracidade dos dados daquele documento.
-*   **Critérios de Aceitação:**
-    *   [ ] A rota de validação deve ser pública, não exigindo login para consultar a autenticidade daquele ID de certificado específico.
-
-### 🔹 US13 - Histórico Completo de Auditoria
-*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF20, RP04
-*   **Como** candidato ou administrador,  
-*   **Quero** acessar o histórico detalhado de todas as tentativas de certificação realizadas,  
-*   **Para** checar quais temas foram respondidos, a questão sorteada, as respostas dadas, as corretas e os carimbos exatos de data/hora.
-*   **Critérios de Aceitação:**
-    *   [ ] Salvar o log de eventos no banco de dados para cada clique de confirmação do usuário.
-
 
 ---
 
@@ -182,6 +57,133 @@ Este backlog lista todas as histórias de usuário necessárias para construir o
 | Marcos Antonio Floreano Gonçalves | Dev Team | [Marcos](https://github.com/MarcosFloreano) |
 | Vitor Souza Leal | Dev Team | [Vitor](https://github.com/vitor-leal1) |
 
+
+---
+
+## 📋 Backlog Geral do Produto (Product Backlog)
+
+Este backlog lista todas as histórias de usuário necessárias para construir o Portal de Certificação, organizadas por módulos funcionais e destacadas por nível de prioridade.
+
+---
+
+### 🔐 Módulo 1: Autenticação, Instruções e Segurança (LGPD)
+
+#### 🔹 US01 - Cadastro de Candidatos por CPF
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF03, RNF03 (LGPD), RP04
+*   **Como** candidato interessado na certificação,  
+*   **Quero** me cadastrar informando meu CPF, nome completo, e-mail e senha,  
+*   **Para** que meus dados fiquem salvos de forma segura e em conformidade com a LGPD.
+*   **Critérios de Aceitação:**
+    *   [ ] Front-end desenvolvido estritamente em HTML/CSS/JS puros, sem frameworks (`RP01`).
+    *   [ ] O CPF deve ser validado e tratado como identificador único no banco PostgreSQL.
+
+#### 🔹 US02 - Login Exclusivo
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF04
+*   **Como** candidato cadastrado,  
+*   **Quero** realizar o login utilizando exclusivamente meu CPF e senha,  
+*   **Para** acessar com segurança a minha área restrita do portal.
+*   **Critérios de Aceitação:**
+    *   [ ] Bloquear o acesso a rotas internas caso o usuário não esteja autenticado via token/sessão no Back-end.
+
+#### 🔹 US03 - Tela Inicial e Instruções da Avaliação
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF01, RF02
+*   **Como** candidato autenticado,  
+*   **Quero** visualizar uma tela inicial com a descrição detalhada, objetivos e instruções da certificação,  
+*   **Para** entender o funcionamento das regras antes de escolher iniciar o exame ou retornar depois.
+*   **Critérios de Aceitação:**
+    *   [ ] Apresentar botão claro para "Iniciar Certificação" ou opção de "Sair/Retornar Depois".
+
+---
+
+### ⏱️ Módulo 2: O Motor da Certificação e Banco de Questões
+
+#### 🔹 US04 - Banco de Questões e Sorteio Aleatório por Tema
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF05, RF06, RF15, RP04, RP06, RNF08
+*   **Como** sistema,  
+*   **Quero** selecionar aleatoriamente 1 única questão para cada um dos 12 temas a partir de um banco de 48 questões de alta qualidade (4 por tema),  
+*   **Para** garantir que cada candidato faça uma prova dinâmica e que cada tema seja respondido apenas uma vez.
+*   **Critérios de Aceitação:**
+    *   [ ] As 48 questões devem possuir qualidade técnica, clareza e estar cadastradas via DML no PostgreSQL.
+
+#### 🔹 US05 - Interface Dinâmica da Questão
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF08, RP04, RP06
+*   **Como** candidato realizando a prova,  
+*   **Quero** visualizar a questão atual com seu enunciado, uma imagem obrigatória de apoio e quatro alternativas de múltipla escolha (A, B, C, D),  
+*   **Para** que eu possa analisar o cenário prático e marcar a única alternativa correta.
+*   **Critérios de Aceitação:**
+    *   [ ] A imagem deve carregar corretamente a partir do caminho/banco de dados em todas as questões.
+
+#### 🔹 US06 - Proteção contra Quedas, Fechamento e Fraudes
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF14, RNF04
+*   **Como** sistema,  
+*   **Quero** invalidar e marcar a questão atual como incorreta imediatamente em caso de perda de conexão, fechamento do navegador ou tentativa de manipulação no front-end,  
+*   **Para** garantir a integridade da nota e impedir alterações indevidas.
+*   **Critérios de Aceitação:**
+    *   [ ] Toda validação de acerto/erro e salvamento de estado devem ocorrer no servidor (Node.js), nunca no JavaScript do cliente.
+
+#### 🔹 US07 - Cronômetro de 150 segundos e Encerramento Automático
+*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF10, RF11
+*   **Como** candidato realizando a prova,  
+*   **Quero** visualizar um cronômetro regressivo de 150 segundos ativo na tela,  
+*   **Para** controlar meu tempo de resolução para cada questão.
+*   **Critérios de Aceitação:**
+    *   [ ] Ao zerar os 150s sem resposta enviada, a questão encerra automaticamente, computa como incorreta e exibe o feedback visual na tela.
+
+#### 🔹 US08 - Feedback Imediato e Controle de Pausa da Sessão
+*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF09, RF11, RF12, RF13, RF21
+*   **Como** candidato,  
+*   **Quero** ver qual era a resposta correta logo após responder uma questão e escolher se avanço imediatamente ou se pauso a sessão,  
+*   **Para** que eu possa acompanhar meu progresso (temas concluídos/pendentes) e retomar a prova depois de onde parei.
+*   **Critérios de Aceitação:**
+    *   [ ] O sistema deve salvar o estado exato da sessão do candidato no PostgreSQL após cada clique de avanço.
+
+---
+
+### 📖 Módulo 3: Área de Estudos e Trilha de Aprendizagem
+
+#### 🔹 US09 - Área de Estudos Preparatória
+*   **Prioridade:** `🟡 MÉDIA` | **Requisitos:** RF07, RP07
+*   **Como** candidato,  
+*   **Quero** acessar um painel de estudos organizado exatamente pelos mesmos 12 temas da avaliação, contendo materiais didáticos e imagens,  
+*   **Para** me capacitar e revisar os conceitos de Scrum e Engenharia de Software antes de iniciar o exame.
+*   **Critérios de Aceitação:**
+    *   [ ] Garantir coerência absoluta entre o conteúdo textual exibido na área de estudos e o banco de questões cadastrado.
+
+---
+
+### 🎓 Módulo 4: Resultados, Certificados e Auditoria
+
+#### 🔹 US10 - Cálculo Centralizado de Desempenho
+*   **Prioridade:** `🔴 ALTA` | **Requisitos:** RF16, RNF04
+*   **Como** sistema,  
+*   **Quero** processar e calcular automaticamente a nota final e o percentual de acertos no Back-end assim que o 12º tema for concluído,  
+*   **Para** evitar qualquer tipo de fraude ou alteração de notas por console de navegador.
+*   **Critérios de Aceitação:**
+    *   [ ] O resultado deve ser injetado diretamente na tabela de histórico de forma imutável.
+
+#### 🔹 US11 - Emissão de Certificado Eletrônico Funcional
+*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF17, RF18, RP04
+*   **Como** candidato aprovado com aproveitamento igual ou superior a 65%,  
+*   **Quero** emitir automaticamente um certificado digital contendo meu nome, CPF, e-mail, data/hora, nota, percentual e um QR Code,  
+*   **Para** comprovar formalmente minha capacitação em metodologias ágeis.
+*   **Critérios de Aceitação:**
+    *   [ ] Candidatos com nota inferior a 65% não devem ter acesso ao endpoint ou tela de geração de certificado.
+
+#### 🔹 US12 - Validação Pública via QR Code
+*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF19, RP08
+*   **Como** um recrutador ou avaliador externo,  
+*   **Quero** escanear o QR Code impresso no certificado e ser redirecionado para uma página pública de validação,  
+*   **Para** confirmar a autenticidade e a veracidade dos dados daquele documento.
+*   **Critérios de Aceitação:**
+    *   [ ] A rota de validação deve ser pública, não exigindo login para consultar a autenticidade daquele ID de certificado específico.
+
+#### 🔹 US13 - Histórico Completo de Auditoria
+*   **Prioridade:** `🟢 BAIXA` | **Requisitos:** RF20, RP04
+*   **Como** candidato ou administrador,  
+*   **Quero** acessar o histórico detalhado de todas as tentativas de certificação realizadas,  
+*   **Para** checar quais temas foram respondidos, a questão sorteada, as respostas dadas, as corretas e os carimbos exatos de data/hora.
+*   **Critérios de Aceitação:**
+    *   [ ] Salvar o log de eventos no banco de dados para cada clique de confirmação do usuário.
 
 ---
 
