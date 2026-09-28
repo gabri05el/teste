@@ -37,9 +37,9 @@ O projeto integra os conhecimentos do semestre abordando do design à infraestru
 | Nome | Função | GitHub |
 | :--- | :--- | :---: |
 | Gabriel da Fonseca Flauzino | Project Owner | [Gabriel](https://github.com/gabri05el) |
-| Hector Saiki Colombani de Faria | Dev Team | [![GitHub](https://shields.io)](https://github.com/saikihector) |
-| Igor Vinicius de Araujo Pece Dos Santos | Dev Team | [![GitHub](https://shields.io)](https://github.com/IgorVinicin) |
-| João Vitor Pazzini Theodoro Gama | Dev Team | [![GitHub](https://shields.io)](https://github.com/jaopazzini) |
-| Lucas Vilas Boas Fukuoka | Scrum Master | [![GitHub](https://shields.io)](https://github.com/LuFukuo) |
-| Marcos Antonio Floreano Gonçalves | Dev Team | [![GitHub](https://shields.io)](https://github.com/MarcosFloreano) |
-| Vitor Souza Leal | Dev Team | [![GitHub](https://shields.io)](https://github.com/vitor-leal1) |
+| Hector Saiki Colombani de Faria | Dev Team | [Hector](https://github.com/saikihector) |
+| Igor Vinicius de Araujo Pece Dos Santos | Dev Team | [Igor](https://github.com/IgorVinicin) |
+| João Vitor Pazzini Theodoro Gama | Dev Team | [João](https://github.com/jaopazzini) |
+| Lucas Vilas Boas Fukuoka | Scrum Master | [Lucas](https://github.com/LuFukuo) |
+| Marcos Antonio Floreano Gonçalves | Dev Team | [Marcos](https://github.com/MarcosFloreano) |
+| Vitor Souza Leal | Dev Team | [Vitor](https://github.com/vitor-leal1) |
