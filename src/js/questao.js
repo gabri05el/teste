@@ -14,7 +14,7 @@ const alternativas = [
 ];
 
 /* ---------- Cronômetro ---------- */
-const TEMPO_TOTAL = 150; // segundos por questão
+const TEMPO_TOTAL = 1500; // segundos por questão
 let tempoRestante = TEMPO_TOTAL;
 let encerrada = false;   // true quando a questão já foi confirmada ou o tempo acabou
 
