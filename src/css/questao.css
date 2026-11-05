@@ -437,12 +437,15 @@
         width: 90%;
         height: 28rem;
     }
+    .main__questao_enunciado {
+        margin-top: 1rem;
+    }
     .main__questao_texto {
         font-size: 1.1rem;
     }
     .main__questao_img {
         min-width: 90%;
-        height: 18rem;
+        height: 16rem;
     }
     /* Main Alternativa */
     .main__alternativas {
