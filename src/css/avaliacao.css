@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 900,800,700,600,500,400,300,200,100;
+    font-display: swap;
+    src: url('/src/fonts/files/PlusJakartaSans-Variable-latin.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,20 +17,15 @@
 }
 
 :root {
-    --color-primary: #3A66FF;
-    --color-secondary: #7A33CC;
-    --color-background: #F5F7FC;
-    --color-surface: #FFFFFF;
-    --color-text: #18233D;
-    --color-success: #16804A;
-    --color-error: #C53D47;
-    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 700;
-    --bolder: 900;
+--color-primary: #0038FA;
+--color-secondary: #7A33CC;
+--color-background: #F5F7FC;
+--color-surface: #FFFFFF;
+--color-text: #18233D;
+--color-text-other: #F5F7FC;
+--color-success: #16804A;
+--color-error: #C53D47;
+--transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -85,8 +88,8 @@ header.scrolled {
     position: relative;          /* sempre, não só no hover */
     display: inline-block;       /* padding e bottom passam a funcionar direito */
     color: var(--color-text);
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
     padding: 10px 22px;
     border-radius: 50px;
     margin: 0 4px;
@@ -183,14 +186,15 @@ button.btnLogin-popup {
 
 /* Sub-Titulo */
 .sub_titulo {
+    cursor: default;
     display: flex;
     justify-content: center;
     margin: 2rem 0;
 }
 
 .sub_titulo h2 {
-    background-color: var(--color-surface);
     color: var(--color-text);
+    text-wrap: noWrap;
     font-size: 2.2rem;
     padding: 1rem;
     border-radius: 18px;

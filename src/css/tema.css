@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 900,800,700,600,500,400,300,200,100;
+    font-display: swap;
+    src: url('/src/fonts/files/PlusJakartaSans-Variable-latin.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@
 }
 
 :root {
-    --color-primary: #3A66FF;
+    --color-primary: #0038FA;
     --color-secondary: #7A33CC;
     --color-background: #F5F7FC;
     --color-surface: #FFFFFF;
@@ -79,7 +87,8 @@ header.scrolled {
     position: relative;          /* sempre, não só no hover */
     display: inline-block;       /* padding e bottom passam a funcionar direito */
     color: var(--color-text);
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
     padding: 10px 22px;
     border-radius: 50px;
     margin: 0 4px;
@@ -202,6 +211,7 @@ button.btnLogin-popup {
     font-size: 0.95rem;
     font-weight: 300;
     line-height: 1.6;
+    cursor: default;
 }
 
 .conteudo p {
@@ -212,6 +222,13 @@ button.btnLogin-popup {
     color: var(--color-surface);
     font-weight: 400;
     font-size: 1.4rem;
+}
+
+.texto-explicativo img {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
 }
 
 footer {
@@ -241,7 +258,7 @@ footer {
     display: block;
     width: 30px;
     height: 3px;
-    background: var(--color-primary);
+    background: var(--color-text);
     border-radius: 3px;
     transition: 0.3s;
 }
@@ -302,6 +319,9 @@ footer {
     }
     .texto-explicativo p {
         font-size: 1.3rem;
+    }
+    .texto-explicativo img {
+        border-radius: 1.6rem;
     }
 
     /* Footer */
@@ -373,6 +393,9 @@ footer {
     .texto-explicativo p {
         font-size: 1.2rem;
     }
+    .texto-explicativo img {
+        border-radius: 1.4rem;
+    }
 }
 
 /* ---------- Mobile ---------- */
@@ -428,6 +451,9 @@ footer {
     }
     .texto-explicativo p {
         font-size: 1rem;
+    }
+    .texto-explicativo img {
+        border-radius: 0.8rem;
     }
     /* Footer */
     footer {
