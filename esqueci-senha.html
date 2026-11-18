@@ -12,6 +12,9 @@
 <body>
     <div class="container" id="container">
 
+        <nav class="btn-home">
+            <a href="acesso.html" class="button-voltar"><i class="icone-voltar fa-solid fa-angle-left"></i>Voltar</a>
+        </nav>
         <!-- Esqueci minha sinha box -->
 
         <div class="form-container">
@@ -20,20 +23,20 @@
                 <h1 class="title">Esqueci minha senha</h1>
 
                 <div class="input-icon">
-                    <img src="src/images/icons/cpf-icon.svg" alt="" aria-hidden="true">
+                    <i class="fa-regular fa-address-card"></i>
                     <label for="redefinir-senha" class="sr-only">Email</label>
                     <input type="email" name="email" placeholder="Email" autocomplete="email" required>
                 </div>
 
                 <div class="input-icon">
-                    <img src="src/images/icons/lock-icon.svg" alt="" aria-hidden="true">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
                     <label for="redefinir-senha" class="sr-only">Senha</label>
                     <input type="password" name="senha" placeholder="Nova senha" minlength="6" autocomplete="new-password" required>
                 </div>
 
 
                 <div class="input-icon">
-                    <img src="src/images/icons/lock-icon.svg" alt="" aria-hidden="true">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
                     <label for="redefinir-senha" class="sr-only">Senha</label>
                     <input type="password" name="confirmacaoSenha" placeholder="Confirme a nova senha" minlength="6" autocomplete="new-password" required>
                 </div>
@@ -41,7 +44,6 @@
                 <button type="submit">Redefinir</button>
             </form>
         </div>
-                <a href="acesso.html" class="button-voltar"><img src="src/images/icons/seta-icon.png" class="icone-voltar" alt="Voltar">Voltar</a>
     </div>
     <script src="src/js/esqueci-senha.js"></script>
 </body>

@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <meta name="description" content="Veja seus dados, seu progresso e o certificado do curso Metodologias Ágeis." />
   <meta name="theme-color" content="#3A66FF" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="shortcut icon" href="./src/images/icons/dogschool.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/images/icons/dogschool.ico" type="image/x-icon" />
   <!-- Guarda: exige login. Precisa ser o primeiro script do head -->
   <script src="./src/js/guarda.js"></script>
   <link rel="stylesheet" href="src/css/perfil.css" />
@@ -17,8 +17,7 @@
 <body>
   <div class="container" id="container">
     <nav class="btn-home" aria-label="Navegação principal">
-      <a href="index.html" class="button-voltar"><img src="src/images/icons/seta-icon.png" class="icone-voltar"
-          alt="" />Home</a>
+      <a href="index.html" class="button-voltar"><i class="fa-solid fa-angle-left"></i>Home</a>
     </nav>
 
     <main class="painel">
@@ -108,13 +107,29 @@
               aria-valuemax="100" aria-valuenow="0" aria-valuetext="0% concluído" id="barra">
               <span class="barra-preenchida" id="barra-preenchida"></span>
             </div>
-            <a href="index.html" class="botao" id="btn-continuar">Continuar o curso</a>
+            <a href="avaliacao.html" class="botao" id="btn-continuar">Ir para a avaliação</a>
+          </section>
+
+          <section class="cartao" aria-labelledby="temas-titulo">
+            <h2 id="temas-titulo">Temas do curso</h2>
+            <p class="texto-suave" id="texto-temas"></p>
+            <ul class="temas" id="lista-temas"></ul>
+          </section>
+
+          <section class="cartao" aria-labelledby="historico-titulo">
+            <h2 id="historico-titulo">Histórico de respostas</h2>
+            <div class="campo historico-filtro">
+              <label for="filtro-tema">Filtrar por tema</label>
+              <select id="filtro-tema"></select>
+            </div>
+            <ol class="historico" id="lista-historico"></ol>
           </section>
 
           <section class="cartao-cert" aria-labelledby="cert-secao-titulo">
             <h2 id="cert-secao-titulo">Meu certificado</h2>
             <p class="texto-suave" id="cert-bloqueado" hidden>
-              Conclua 100% do curso para liberar o certificado.
+              Seja aprovado na avaliação (mínimo de 65% de acertos) para
+              liberar o certificado.
             </p>
 
             <div id="estado-liberado" hidden>
@@ -228,6 +243,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script src="src/js/historico.js"></script>
   <script src="src/js/perfil.js"></script>
 </body>
 
