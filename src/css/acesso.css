@@ -1,26 +1,35 @@
 @font-face {
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
-    font-weight: 900,800,700,600,500,400,300,200,100;
+    font-weight: 700,600,500,400,300;
     font-display: swap;
     src: url('/src/fonts/files/PlusJakartaSans-Variable-latin.woff') format('woff');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 :root {
---color-primary: #0038FA;
---color-secondary: #7A33CC;
---color-background: #F5F7FC;
---color-surface: #FFFFFF;
---color-text: #18233D;
---color-success: #16804A;
---color-error: #C53D47;
+    --color-primary: #0038FA;
+    --color-secondary: #7A33CC;
+    --color-background: #F5F7FC;
+    --color-surface: #FFFFFF;
+    --color-text: #18233D;
+    --color-success: #16804A;
+    --color-error: #C53D47;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
 }
 
 body{
@@ -62,7 +71,7 @@ body{
     padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: var(--semi-bold);
     letter-spacing: 0.5px;
     margin-top: 10px;
     cursor: pointer;
@@ -98,7 +107,7 @@ body{
 
 .form-title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--bold);
     color: var(--color-text);
     margin-bottom: 20px;
 }
@@ -137,7 +146,7 @@ body{
 
 .container .input-icon input.input-erro::placeholder {
     color: var(--color-error);
-    font-weight: 600;
+    font-weight: var(--semi-bold);
 }
 
 /* Notificação de Sucesso (Toast) Centralizada */
@@ -151,7 +160,7 @@ body{
     padding: 14px 28px;
     border-radius: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--semi-bold);
     text-align: center;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     z-index: 9999;
@@ -293,7 +302,7 @@ body{
     display: flex;
     color: var(--color-text);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: var(--bold);
     font-size: 1.3rem;
 }
 

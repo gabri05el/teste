@@ -1,15 +1,17 @@
 @font-face {
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
-    font-weight: 900,800,700,600,500,400,300,200,100;
+    font-weight: 700,600,500,400,300;
     font-display: swap;
     src: url('/src/fonts/files/PlusJakartaSans-Variable-latin.woff') format('woff');
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -21,6 +23,7 @@
     --color-text: #18233D;
     --color-success: #16804A;
     --color-error: #C53D47;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --light: 300;
     --regular: 400;
@@ -120,7 +123,7 @@
 
 .main__questao_texto {
     color: var(--color-text);
-    font-weight: bold;
+    font-weight: var(--bold);
     font-size: 1.25rem;
 }
 

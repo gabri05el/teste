@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 900,800,700,600,500,400,300,200,100;
+  font-weight: 700,600,500,400,300;
   font-display: swap;
   src: url("/src/fonts/files/PlusJakartaSans-Variable-latin.woff")
     format("woff");
@@ -28,6 +28,12 @@
 
   --cert-bg: #f5f9fd;
   --cert-navy: #0c1f4f;
+
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
 
   --space-1: 4px;
   --space-2: 8px;
@@ -80,7 +86,7 @@ body {
   gap: var(--space-2);
   color: var(--color-text);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-decoration: none;
 }
 
@@ -111,7 +117,7 @@ body {
 
 .form-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 1.2;
 }
 
@@ -133,7 +139,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 0 4px rgba(58, 102, 255, 0.18);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
@@ -258,7 +264,7 @@ input:focus-visible {
   );
   color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .perfil-info {
@@ -283,7 +289,7 @@ input:focus-visible {
 
 .dados dt {
   color: var(--color-muted);
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .dados dd {
@@ -305,7 +311,7 @@ input:focus-visible {
 
 .campo label {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   color: var(--color-muted);
 }
 
@@ -347,11 +353,11 @@ input:focus-visible {
   min-height: 1em;
   color: var(--color-success);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .curso-nome {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .texto-suave {
@@ -420,7 +426,7 @@ input:focus-visible {
 
 .validar-label {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .validar-linha {
@@ -507,7 +513,7 @@ input:focus-visible {
   border: 1px solid #dbe3f0;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-weight: 300;
+  font-weight: var(--light);
   overflow: hidden;
   container-type: inline-size;
 }
@@ -556,7 +562,7 @@ input:focus-visible {
   margin-top: auto;
   font-size: 40px;
   font-size: 5.7cqw; /* = 64px no PDF A4 (1122px de largura) */
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 1.08;
   white-space: nowrap;
   text-transform: uppercase;
@@ -589,12 +595,12 @@ input:focus-visible {
 .cert-texto {
   font-size: 20px;
   font-size: 3.1cqw;
-  font-weight: 300;
+  font-weight: var(--light);
   line-height: 1.5;
 }
 
 .cert-texto span {
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .cert-cpf {
@@ -602,12 +608,12 @@ input:focus-visible {
   margin-top: 1.2cqw;
   font-size: 14px;
   font-size: 2.2cqw;
-  font-weight: 300;
+  font-weight: var(--light);
   line-height: 1.7;
 }
 
 .cert-cpf span {
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .cert-dados {
@@ -651,13 +657,13 @@ input:focus-visible {
   margin-top: 4.96px;
   font-size: 13px;
   font-size: max(13px, 1.3cqw);
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .cert-qr small {
   font-size: 8.5px;
   font-size: max(8.5px, 0.85cqw);
-  font-weight: 300;
+  font-weight: var(--light);
 }
 
 .cert-celula {
@@ -669,13 +675,13 @@ input:focus-visible {
   border-left: 0.93px solid var(--cert-navy);
   font-size: 13px;
   font-size: max(13px, 1.3cqw);
-  font-weight: 300;
+  font-weight: var(--light);
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
 
 .cert-celula span span {
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .cert-codigo-linha {
